@@ -10,3 +10,13 @@ import DefaultLayout from '@/layouts/Default.vue'
     </main>
   </DefaultLayout>
 </template>
+
+<script>
+export default {
+  created() {
+    this.axios.get('https://yandex.ru').then(response => {
+      console.log(response);
+    });
+  },
+}
+</script>
